@@ -6,7 +6,7 @@ import re
 
 
 
-# Reprocess a list of tokens (that is properly handled by nltk.tokenize) and return a list of processed tokens. Do the following:
+# Reprocess a list of tokens (that is not properly handled by nltk.tokenize) and return a list of processed tokens. Do the following:
 # Split every token of words connected by slashes into separate tokens (eg. ['weather/climate'] -> ['weather', 'climate'])
 # Join every token starting with a contraction with its previous token (eg. ['virus', "'s"] -> ["virus's"])
 def process_tokens(tokens):
