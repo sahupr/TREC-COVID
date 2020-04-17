@@ -25,27 +25,29 @@ def tokenize(text):
 
 
 
-# Return a list of queries, each query is a dictionary with the following key:
-# 'number': topic number
-# 'query': tokenized words in <query> tag
-# 'question': tokenized words in <question> tag
-# 'narrative': tokenized words in <narrative> tag
+# Return a dictionary of queries of form {topic_id:[query,question,narrative]} where:
+# topic_id is attribute number in tag <topic>
+# query is processed string of text in tag <query>
+# question is processed string of text in tag <question>
+# narrative is processed string of text in tag <narrative>
 def get_queries(xml_filename):
 	tree = ET.parse(xml_filename)
 	topics = tree.getroot()
-	queries = []
+	queries = {}
 	for topic in topics:
-		metadata = {'number':topic.attrib['number']}
+		metadata = []
 		for topic_metadata in topic:
-			metadata[topic_metadata.tag] = tokenize(topic_metadata.text)
-		queries.append(metadata)
+			metadata.append(' '.join(tokenize(topic_metadata.text)))
+		queries[topic.attrib['number']] = metadata
 	return queries
 
 
 
 if __name__ == '__main__':
 	queries = get_queries('topics-rnd1.xml')
-	for query in queries:
-		for metadata in query:
-			print(metadata, ':', query[metadata])
+	for topic_id in queries:
+		print('topic id:', topic_id)
+		print('query:', queries[topic_id][0])
+		print('question:', queries[topic_id][1])
+		print('narrative:', queries[topic_id][2])
 		print()
