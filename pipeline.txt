@@ -1,0 +1,17 @@
+### PIPELINE FOR TREC-COVID ###
+
+Documents to be parsed from the dataset to the database (done, production server)
+
+Index creation in the test server from those documents using elastic search
+	Configuration file 
+	
+Python file
+	parsing the topics
+	connecting to the database and storing the parsed results in the database (not required)
+	query expansion (lexigram.io)
+	use elastic search parameters and index to get the initial retrieval
+	store the relevant documents in a text file with the correct specified format
+
+Re-ranking methods (if any, concept-based, venue-based, ML)
+	
+	
