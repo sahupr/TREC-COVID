@@ -1,0 +1,2 @@
+# TREC-COVID
+TREC-COVID 2020 task files
