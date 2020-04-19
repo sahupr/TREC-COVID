@@ -2,7 +2,7 @@
 
 Documents to be parsed from the dataset to the database (done, production server)
 
-Index creation in the test server from those documents using elastic search
+Index creation in the test server from those documents using elastic search (done, 2738 entries)
 	Configuration file (done)
 	
 Python file
