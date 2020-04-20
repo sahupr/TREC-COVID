@@ -65,3 +65,5 @@ def get_queries(xml_filename):
 if __name__ == '__main__':
 	queries = get_queries('topics-rnd1.xml')
 	queries[['topic_id', 'query']].to_csv('query1.csv', index=False, header=True)
+	queries['combined_query'] = queries['query'] + ' ' + queries['question'] + ' ' + queries['narrative']
+	queries[['topic_id', 'combined_query']].to_csv('raw_query.csv', index=False, header=['topic_id', 'query'])
