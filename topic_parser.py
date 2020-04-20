@@ -3,6 +3,7 @@ from nltk.tokenize import sent_tokenize, word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 import re
+import pandas as pd
 
 
 
@@ -44,7 +45,7 @@ def tokenize(text):
 
 
 
-# Return a dictionary of queries of form {topic_id:[query,question,narrative]} where:
+# Return a dataframe of queries of 4 columns topic_id, query, question, narrative  where:
 # topic_id is attribute number in tag <topic>
 # query is processed string of text in tag <query>
 # question is processed string of text in tag <question>
@@ -52,21 +53,15 @@ def tokenize(text):
 def get_queries(xml_filename):
 	tree = ET.parse(xml_filename)
 	topics = tree.getroot()
-	queries = {}
+	dict_queries = {'topic_id':[], 'query':[], 'question':[], 'narrative':[]}
 	for topic in topics:
-		metadata = []
+		dict_queries['topic_id'].append(topic.attrib['number'])
 		for topic_metadata in topic:
-			metadata.append(' '.join(tokenize(topic_metadata.text)))
-		queries[topic.attrib['number']] = metadata
-	return queries
+			dict_queries[topic_metadata.tag].append(' '.join(tokenize(topic_metadata.text)))
+	return pd.DataFrame(dict_queries)
 
 
 
 if __name__ == '__main__':
 	queries = get_queries('topics-rnd1.xml')
-	for topic_id in queries:
-		print('topic id:', topic_id)
-		print('query:', queries[topic_id][0])
-		print('question:', queries[topic_id][1])
-		print('narrative:', queries[topic_id][2])
-		print()
+	queries[['topic_id', 'query']].to_csv('query1.csv', index=False, header=True)
