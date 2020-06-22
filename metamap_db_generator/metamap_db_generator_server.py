@@ -21,7 +21,7 @@ def update_db(a_id, result, stdout_lock):
         database = config.DATABASE
     )
     cursor = db.cursor()
-    cursor.execute('UPDATE {} SET {} = "{}" WHERE {} = {};'.format(config.TABLE, config.RESULT, result, config.ID, a_id))
+    cursor.execute('UPDATE {} SET {} = %s WHERE {} = {};'.format(config.TABLE, config.RESULT, config.ID, a_id), (result,))
     db.commit()
     stdout_lock.acquire()
     print('Doc {} updated to db.'.format(a_id))
@@ -58,6 +58,11 @@ def handle_client(conn, client_id, docs, docs_lock, stdout_lock):
             threads.append(thread)
     for thread in threads:
         thread.join()
+    conn.close()
+    stdout_lock.acquire()
+    print('Done with client {}. Connection closed.'.format(client_id))
+    stdout_lock.release()
+
 
 if __name__ == '__main__':    
     start_time = time.time()
@@ -72,7 +77,7 @@ if __name__ == '__main__':
     )
     cursor = db.cursor()
     cursor.execute('SELECT {}, {}, {} from {};'.format(config.ID, ', '.join(config.TEXT), config.RESULT, config.TABLE))
-    docs = cursor.fetchall()[::-1]
+    docs = cursor.fetchall()[:100][::-1]
     cursor.close()
     db.close()
 
@@ -92,7 +97,11 @@ if __name__ == '__main__':
         sock.bind((config.SERVER_HOST, config.SERVER_PORT))
         sock.listen(config.MAX_NUM_CLIENTS)
         while len(docs) > 0:
-            conn, addr = sock.accept()
+            sock.settimeout(1)
+            try:
+                conn, addr = sock.accept()
+            except socket.timeout as e:
+                continue
             num_clients += 1
             thread = threading.Thread(target=handle_client, args=(conn, num_clients, docs, docs_lock, stdout_lock))
             thread.start()
