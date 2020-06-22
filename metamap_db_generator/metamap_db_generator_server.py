@@ -77,7 +77,7 @@ if __name__ == '__main__':
     )
     cursor = db.cursor()
     cursor.execute('SELECT {}, {}, {} from {};'.format(config.ID, ', '.join(config.TEXT), config.RESULT, config.TABLE))
-    docs = cursor.fetchall()[:100][::-1]
+    docs = cursor.fetchall()[::-1]
     cursor.close()
     db.close()
 
