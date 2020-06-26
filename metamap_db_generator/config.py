@@ -18,6 +18,7 @@ RESULT = 'metamap_raw_' + '_'.join(TEXT)
 MAX_NUM_CLIENTS = 100
 
 # client config
-METAMAP_DIR = '/tools/public_mm_lite'
-METAMAP_TIMEOUT = 20
+RUN_DIR = '/tools/public_mm_lite'
+RUN_ARGS = ['./metamaplite.sh', '--']
+RUN_TIMEOUT = 300
 NUM_THREADS = 4

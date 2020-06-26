@@ -10,7 +10,10 @@ def tcp_send(conn, msg):
 def tcp_recv(conn):
     result = bytearray()
     while not result.endswith(config.STOP_STRING.encode('utf-8')):
-        result.extend(conn.recv(config.BUF_SIZE))
+        data = conn.recv(config.BUF_SIZE)
+        if len(data) == 0:
+            return None
+        result.extend(data)
     return result.decode('utf-8')[:-len(config.STOP_STRING)]
 
 def update_db(a_id, result, stdout_lock):
@@ -45,6 +48,11 @@ def handle_client(conn, client_id, docs, docs_lock, stdout_lock):
         print('Doc {} distributed to client {}. Waiting for response...'.format(a_id, client_id))
         stdout_lock.release()
         result = tcp_recv(conn)
+        if result is None:
+            stdout_lock.acquire()
+            print('Client {} disconnected. Doc {} could not be done.'.format(client_id, a_id))
+            stdout_lock.release()
+            break
         if result == config.ERROR_STRING:
             stdout_lock.acquire()
             print('Doc {} could not be done by client {}.'.format(a_id, client_id))
@@ -81,6 +89,7 @@ if __name__ == '__main__':
     cursor.close()
     db.close()
 
+    docs = [doc for doc in docs if None not in doc[1:-1]]
     if not config.OVERWRITE:
         docs = [doc for doc in docs if doc[-1] is None]
 

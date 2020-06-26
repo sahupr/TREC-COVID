@@ -24,7 +24,7 @@ def make_connection():
             if text is None:
                 break
             try:
-                proc = subprocess.run(['./metamaplite.sh', '--'], input=text, encoding='utf-8', stdout=subprocess.PIPE, timeout=config.METAMAP_TIMEOUT)
+                proc = subprocess.run(config.RUN_ARGS, input=text, encoding='utf-8', stdout=subprocess.PIPE, timeout=config.RUN_TIMEOUT)
                 output_str = proc.stdout
             except Exception as e:
                 print(e)
@@ -32,7 +32,7 @@ def make_connection():
             tcp_send(sock, output_str)
 
 if __name__ == '__main__':
-    os.chdir(config.METAMAP_DIR)
+    os.chdir(config.RUN_DIR)
     threads = [threading.Thread(target=make_connection) for _ in range(config.NUM_THREADS)]
     for thread in threads:
         thread.start()
