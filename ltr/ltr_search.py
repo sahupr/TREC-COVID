@@ -74,7 +74,7 @@ if __name__ == '__main__':
         qrel_filenames = ['qrels-covid_d3_j0.5-3.txt'],
         output_filename = 'output.txt',
         multi_match_type = 'cross_fields',
-        multi_match_fields = ['title', 'abstract', 'metamap_terms_title_abstract'],
+        multi_match_fields = ['title', 'abstract', 'metamap_term_title_abstract'],
         use_ltr = True,
         ltr_model = 'model_trec_covid_rnd_4_ranker_0',
         rescore_size = 2000,
