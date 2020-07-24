@@ -17,7 +17,7 @@ def read_qrel_files(qrel_filenames):
                 result.add(line.strip().split()[2])
     return result
 
-def ltr_search(es_index, valid_filename, query_filename, param_filename, qrel_filenames, output_filename, multi_match_type, multi_match_fields, ltr_model, rescore_size, search_size, output_size, run_tag):
+def ltr_search(es_index, valid_filename, query_filename, param_filename, qrel_filenames, output_filename, multi_match_type, multi_match_fields, use_ltr, ltr_model, rescore_size, search_size, output_size, run_tag):
     es = Elasticsearch()
     valid_cord_uids = read_valid_file(valid_filename)
     queries = pd.read_csv(query_filename).fillna('').set_index('topic_id')
@@ -25,26 +25,37 @@ def ltr_search(es_index, valid_filename, query_filename, param_filename, qrel_fi
     qrel_cord_uids = read_qrel_files(qrel_filenames)
     with open(output_filename, 'w') as output_file:
         for topic_id in queries.index:
-            query_json = {
-                'query': {
-                    'multi_match': {
-                        'query': queries.loc[topic_id, 'query'],
-                        'type': multi_match_type,
-                        'fields': multi_match_fields
-                    }
-                },
-                'rescore': {
-                    'window_size': rescore_size,
+            if not use_ltr:
+                query_json = {
                     'query': {
-                        'rescore_query': {
-                            'sltr': {
-                                'params': params.loc[topic_id].to_dict(),
-                                'model': ltr_model
+                        'multi_match': {
+                            'query': queries.loc[topic_id, 'query'],
+                            'type': multi_match_type,
+                            'fields': multi_match_fields
+                        }
+                    }
+                }
+            else:
+                query_json = {
+                    'query': {
+                        'multi_match': {
+                            'query': queries.loc[topic_id, 'query'],
+                            'type': multi_match_type,
+                            'fields': multi_match_fields
+                        }
+                    },
+                    'rescore': {
+                        'window_size': rescore_size,
+                        'query': {
+                            'rescore_query': {
+                                'sltr': {
+                                    'params': params.loc[topic_id].to_dict(),
+                                    'model': ltr_model
+                                }
                             }
                         }
                     }
                 }
-            }
             response = es.search(index=es_index, body=query_json, size=search_size)
             hits = response['hits']['hits']
             result_cord_uids = [hit['_source']['cord_uid'] for hit in hits]
@@ -64,6 +75,7 @@ if __name__ == '__main__':
         output_filename = 'output.txt',
         multi_match_type = 'cross_fields',
         multi_match_fields = ['title', 'abstract', 'metamap_terms_title_abstract'],
+        use_ltr = True,
         ltr_model = 'model_trec_covid_rnd_4_ranker_0',
         rescore_size = 2000,
         search_size = 2000,
