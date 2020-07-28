@@ -17,7 +17,7 @@ def read_qrel_files(qrel_filenames):
                 result.add(line.strip().split()[2])
     return result
 
-def ltr_search(es_index, valid_filename, query_filename, param_filename, qrel_filenames, output_filename, multi_match_type, multi_match_fields, use_ltr, ltr_model, rescore_size, search_size, output_size, run_tag):
+def ltr_search(es_index, valid_filename, query_filename, param_filename, qrel_filenames, output_filename, multi_match_type, multi_match_fields, use_ltr, ltr_model, score_mode, query_weight, rescore_query_weight, rescore_size, search_size, output_size, run_tag):
     es = Elasticsearch()
     valid_cord_uids = read_valid_file(valid_filename)
     queries = pd.read_csv(query_filename).fillna('').set_index('topic_id')
@@ -52,7 +52,10 @@ def ltr_search(es_index, valid_filename, query_filename, param_filename, qrel_fi
                                     'params': params.loc[topic_id].to_dict(),
                                     'model': ltr_model
                                 }
-                            }
+                            },
+                            'score_mode': score_mode,
+                            'query_weight': query_weight,
+                            'rescore_query_weight': rescore_query_weight
                         }
                     }
                 }
@@ -77,6 +80,9 @@ if __name__ == '__main__':
         multi_match_fields = ['title', 'abstract', 'metamap_term_00_title_abstract'],
         use_ltr = True,
         ltr_model = 'model_trec_covid_rnd_4_2_ranker_0',
+        score_mode = 'total',
+        query_weight = 1.0,
+        rescore_query_weight = 1.0,
         rescore_size = 2000,
         search_size = 2000,
         output_size = 1000,
