@@ -6,12 +6,12 @@ import subprocess
 ELASTICSEARCH_DOMAIN = 'http://localhost:9200'
 FEATURESET_NAME = 'featureset_trec_covid_2'
 FEATURESET_FILENAME = 'featureset.csv'
-INDEX_NAME = 'covid_19_0619_2'
-QREL_FILENAME = 'qrels-covid_d3_j0.5-3.txt'
-PARAM_FILENAME = 'rnd4_params.csv'
-JUDGMENT_FILENAME = 'judgment_trec_covid_rnd_4.txt'
-MODEL_NAME_TEMPLATE = 'model_trec_covid_rnd_4_2_ranker_{}'
-MODEL_FILENAME_TEMPLATE = 'model_files/model_trec_covid_rnd_4_2_ranker_{}.txt'
+INDEX_NAME = 'covid_19_0716'
+QREL_FILENAME = 'qrels-covid_d4_j0.5-4.txt'
+PARAM_FILENAME = 'rnd5_params.csv'
+JUDGMENT_FILENAME = 'judgment_trec_covid_rnd_5.txt'
+MODEL_NAME_TEMPLATE = 'model_trec_covid_rnd_5_ranker_{}'
+MODEL_FILENAME_TEMPLATE = 'model_files/model_trec_covid_rnd_5_ranker_{}.txt'
 RANKLIB_JAR = 'RankLibPlus-0.1.0.jar'
 RANKERS = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 

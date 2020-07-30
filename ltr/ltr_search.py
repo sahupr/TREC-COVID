@@ -18,7 +18,7 @@ def read_qrel_files(qrel_filenames):
     return result
 
 def ltr_search(es_index, valid_filename, query_filename, param_filename, qrel_filenames, output_filename, multi_match_type, multi_match_fields, use_ltr, ltr_model, score_mode, query_weight, rescore_query_weight, rescore_size, search_size, output_size, run_tag):
-    es = Elasticsearch()
+    es = Elasticsearch(timeout=300)
     valid_cord_uids = read_valid_file(valid_filename)
     queries = pd.read_csv(query_filename).fillna('').set_index('topic_id')
     params = pd.read_csv(param_filename).fillna('').set_index('topic_id')
