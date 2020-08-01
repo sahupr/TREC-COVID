@@ -14,37 +14,37 @@ SETTINGS_LEVEL_1 = [
         'id_1': 1,
         'id_2': 2,
         'query_filename': 'queries_rnd_4_text.csv',
-        'multi_match_fields': ['title', 'abstract', 'metamap_term_00_title_abstract'],
-        'multi_match_type': 'cross_fields'
-    },
-    {
-        'id_1': 3,
-        'id_2': 4,
-        'query_filename': 'queries_rnd_4_metamap_00_id.csv',
-        'multi_match_fields': ['metamap_00_id_title_abstract'],
-        'multi_match_type': 'cross_fields'
-    },
-    {
-        'id_1': 5,
-        'id_2': 6,
-        'query_filename': 'queries_rnd_4_metamap_01_id.csv',
-        'multi_match_fields': ['metamap_01_id_title_abstract'],
-        'multi_match_type': 'cross_fields'
-    },
-    {
-        'id_1': 7,
-        'id_2': 8,
-        'query_filename': 'queries_rnd_4_metamap_10_id.csv',
-        'multi_match_fields': ['metamap_10_id_title_abstract'],
-        'multi_match_type': 'cross_fields'
-    },
-    {
-        'id_1': 9,
-        'id_2': 10,
-        'query_filename': 'queries_rnd_4_metamap_11_id.csv',
-        'multi_match_fields': ['metamap_11_id_title_abstract'],
+        'multi_match_fields': ['title', 'abstract', 'metamap_00_term_title_abstract'],
         'multi_match_type': 'cross_fields'
     }
+#     {
+#         'id_1': 3,
+#         'id_2': 4,
+#         'query_filename': 'queries_rnd_4_metamap_00_id.csv',
+#         'multi_match_fields': ['metamap_00_id_title_abstract'],
+#         'multi_match_type': 'cross_fields'
+#     },
+#     {
+#         'id_1': 5,
+#         'id_2': 6,
+#         'query_filename': 'queries_rnd_4_metamap_01_id.csv',
+#         'multi_match_fields': ['metamap_01_id_title_abstract'],
+#         'multi_match_type': 'cross_fields'
+#     },
+#     {
+#         'id_1': 7,
+#         'id_2': 8,
+#         'query_filename': 'queries_rnd_4_metamap_10_id.csv',
+#         'multi_match_fields': ['metamap_10_id_title_abstract'],
+#         'multi_match_type': 'cross_fields'
+#     },
+#     {
+#         'id_1': 9,
+#         'id_2': 10,
+#         'query_filename': 'queries_rnd_4_metamap_11_id.csv',
+#         'multi_match_fields': ['metamap_11_id_title_abstract'],
+#         'multi_match_type': 'cross_fields'
+#     }
 ]
 SETTINGS_LEVEL_2 = [
     {

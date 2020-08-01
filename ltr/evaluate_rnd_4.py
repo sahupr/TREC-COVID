@@ -3,7 +3,7 @@ import subprocess
 import pandas as pd
 
 OUTPUT_FILENAME = 'evaluation_results_rnd_4.csv'
-SEARCH_SETTING_FILENAME = 'combine_run_settings_rnd_4.json'
+SEARCH_SETTING_FILENAME = 'search_settings_rnd_4.json'
 TREC_EVAL_FILENAME = '/home/projects/202004_TREC-COVID/trec_eval/trec_eval'
 QREL_FILENAME = 'qrels-covid_d4_j3.5-4.txt' 
 MEASURES = ['ndcg_cut_20', 'P_20', 'bpref', 'map', 'Rprec', 'recall_10']
