@@ -1,0 +1,17 @@
+query,index
+query,title
+query,abstract
+question,title
+question,abstract
+narrative,title
+narrative,abstract
+covid,title
+covid,abstract
+lexi_query,title
+lexi_query,abstract
+lexi_question,title
+lexi_question,abstract
+lexi_narrative,title
+lexi_narrative,abstract
+lexi_covid,title
+lexi_covid,abstract
