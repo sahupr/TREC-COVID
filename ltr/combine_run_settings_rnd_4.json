@@ -1,0 +1,50 @@
+[
+    {
+        "run_tag": "CincyMedIR-11",
+        "output_filename": "run_files/run_11.txt",
+        "run_1_filename": "run_files/run_2_3_4.txt",
+        "run_2_filename": "run_files/run_4_2_4.txt"
+    },
+    {
+        "run_tag": "CincyMedIR-12",
+        "output_filename": "run_files/run_12.txt",
+        "run_1_filename": "run_files/run_2_3_4.txt",
+        "run_2_filename": "run_files/run_6_2_4.txt"
+    },
+    {
+        "run_tag": "CincyMedIR-13",
+        "output_filename": "run_files/run_13.txt",
+        "run_1_filename": "run_files/run_2_3_4.txt",
+        "run_2_filename": "run_files/run_8_2_4.txt"
+    },
+    {
+        "run_tag": "CincyMedIR-14",
+        "output_filename": "run_files/run_14.txt",
+        "run_1_filename": "run_files/run_2_3_4.txt",
+        "run_2_filename": "run_files/run_10_2_4.txt"
+    },
+    {
+        "run_tag": "CincyMedIR-15",
+        "output_filename": "run_files/run_15.txt",
+        "run_1_filename": "run_files/run_2_5_4.txt",
+        "run_2_filename": "run_files/run_4_2_4.txt"
+    },
+    {
+        "run_tag": "CincyMedIR-16",
+        "output_filename": "run_files/run_16.txt",
+        "run_1_filename": "run_files/run_2_5_4.txt",
+        "run_2_filename": "run_files/run_6_2_4.txt"
+    },
+    {
+        "run_tag": "CincyMedIR-17",
+        "output_filename": "run_files/run_17.txt",
+        "run_1_filename": "run_files/run_2_5_4.txt",
+        "run_2_filename": "run_files/run_8_2_4.txt"
+    },
+    {
+        "run_tag": "CincyMedIR-18",
+        "output_filename": "run_files/run_18.txt",
+        "run_1_filename": "run_files/run_2_5_4.txt",
+        "run_2_filename": "run_files/run_10_2_4.txt"
+    }
+]
