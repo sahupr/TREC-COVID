@@ -4,16 +4,16 @@ import json
 import subprocess
 
 ELASTICSEARCH_DOMAIN = 'http://localhost:9200'
-FEATURESET_NAME = 'featureset_trec_covid_metamap_11_id'
-FEATURESET_FILENAME = 'featureset_metamap_11_id.csv'
+FEATURESET_NAME = 'featureset_trec_covid_test_0'
+FEATURESET_FILENAME = 'featureset_test_0.csv'
 INDEX_NAME = 'covid_19_0716'
 QREL_FILENAME = 'qrels-covid_d4_j0.5-4.txt'
 PARAM_FILENAME = 'rnd5_params.csv'
 JUDGMENT_FILENAME = 'judgment_trec_covid_rnd_5.txt'
-MODEL_NAME_TEMPLATE = 'model_trec_covid_metamap_11_id_rnd_5_ranker_{}'
-MODEL_FILENAME_TEMPLATE = 'model_files/model_trec_covid_metamap_11_id_rnd_5_ranker_{}.txt'
+MODEL_NAME_TEMPLATE = 'model_trec_covid_test_0_rnd_5_ranker_{}'
+MODEL_FILENAME_TEMPLATE = 'model_files/model_trec_covid_test_0_rnd_5_ranker_{}.txt'
 RANKLIB_JAR = 'RankLibPlus-0.1.0.jar'
-RANKERS = [3, 4]
+RANKERS = [0, 2, 3, 4, 6, 7, 8, 9]
 
 def get_featureset(featureset_name, featureset_filename):
     df = pd.read_csv(featureset_filename)

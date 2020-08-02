@@ -1,0 +1,77 @@
+## LambdaMART
+## No. of trees = 1000
+## No. of leaves = 10
+## No. of threshold candidates = 256
+## Learning rate = 0.1
+## Stop early = 100
+
+<ensemble>
+	<tree id="1" weight="0.1">
+		<split>
+			<feature> 7 </feature>
+			<threshold> 27.812916 </threshold>
+			<split pos="left">
+				<feature> 15 </feature>
+				<threshold> 29.594553 </threshold>
+				<split pos="left">
+					<feature> 6 </feature>
+					<threshold> 6.059023 </threshold>
+					<split pos="left">
+						<feature> 12 </feature>
+						<threshold> 4.250992 </threshold>
+						<split pos="left">
+							<output> -1.0939550399780273 </output>
+						</split>
+						<split pos="right">
+							<feature> 12 </feature>
+							<threshold> 4.268941 </threshold>
+							<split pos="left">
+								<output> 1.42220938205719 </output>
+							</split>
+							<split pos="right">
+								<output> -0.2594973146915436 </output>
+							</split>
+						</split>
+					</split>
+					<split pos="right">
+						<feature> 26 </feature>
+						<threshold> 1.891054 </threshold>
+						<split pos="left">
+							<feature> 1 </feature>
+							<threshold> 6.9945993 </threshold>
+							<split pos="left">
+								<feature> 16 </feature>
+								<threshold> 12.260656 </threshold>
+								<split pos="left">
+									<output> 0.4784095287322998 </output>
+								</split>
+								<split pos="right">
+									<output> 1.9257467985153198 </output>
+								</split>
+							</split>
+							<split pos="right">
+								<output> 1.9691630601882935 </output>
+							</split>
+						</split>
+						<split pos="right">
+							<feature> 26 </feature>
+							<threshold> 8.509749 </threshold>
+							<split pos="left">
+								<output> 0.2125573307275772 </output>
+							</split>
+							<split pos="right">
+								<output> 1.5121588706970215 </output>
+							</split>
+						</split>
+					</split>
+				</split>
+				<split pos="right">
+					<output> 2.0 </output>
+				</split>
+			</split>
+			<split pos="right">
+				<output> 1.9469988346099854 </output>
+			</split>
+		</split>
+	</tree>
+</ensemble>

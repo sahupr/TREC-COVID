@@ -1,11 +1,11 @@
 import json
 
 SEARCH_SETTING_FILENAME = 'search_settings_rnd_4.json'
-OUTPUT_FILENAME_FORMAT_1 = 'run_files/run_{}.txt'
-OUTPUT_FILENAME_FORMAT_2 = 'run_files/run_{}_{}_{}.txt'
-RUN_TAG_FORMAT_1 = 'CincyMedIR-{}'
-RUN_TAG_FORMAT_2 = 'CincyMedIR-{}-{}-{}'
-DEFAULT_LTR_MODEL = 'model_trec_covid_rnd_4_2_ranker_0'
+OUTPUT_FILENAME_FORMAT_1 = 'run_files/run_test_1_{}.txt'
+OUTPUT_FILENAME_FORMAT_2 = 'run_files/run_test_1_{}_{}_{}.txt'
+RUN_TAG_FORMAT_1 = 'CincyMedIR-test-1-{}'
+RUN_TAG_FORMAT_2 = 'CincyMedIR-test-1-{}-{}-{}'
+DEFAULT_LTR_MODEL = 'model_trec_covid_test_rnd_4_ranker_0'
 DEFAULT_SCORE_MODE = 'total'
 DEFAULT_QUERY_WEIGHT = 1.0
 DEFAULT_RESCORE_QUERY_WEIGHT = 1.0
@@ -14,37 +14,23 @@ SETTINGS_LEVEL_1 = [
         'id_1': 1,
         'id_2': 2,
         'query_filename': 'queries_rnd_4_text.csv',
-        'multi_match_fields': ['title', 'abstract', 'metamap_00_term_title_abstract'],
+        'multi_match_fields': ['title', 'abstract'],
+        'multi_match_type': 'cross_fields'
+    },
+    {
+        'id_1': 3,
+        'id_2': 4,
+        'query_filename': 'queries_rnd_4_text.csv',
+        'multi_match_fields': ['title', 'abstract', 'metamap_10_term_title_abstract'],
+        'multi_match_type': 'cross_fields'
+    },
+    {
+        'id_1': 5,
+        'id_2': 6,
+        'query_filename': 'queries_rnd_4_text_metamap_10_term.csv',
+        'multi_match_fields': ['title', 'abstract', 'metamap_10_term_title_abstract'],
         'multi_match_type': 'cross_fields'
     }
-#     {
-#         'id_1': 3,
-#         'id_2': 4,
-#         'query_filename': 'queries_rnd_4_metamap_00_id.csv',
-#         'multi_match_fields': ['metamap_00_id_title_abstract'],
-#         'multi_match_type': 'cross_fields'
-#     },
-#     {
-#         'id_1': 5,
-#         'id_2': 6,
-#         'query_filename': 'queries_rnd_4_metamap_01_id.csv',
-#         'multi_match_fields': ['metamap_01_id_title_abstract'],
-#         'multi_match_type': 'cross_fields'
-#     },
-#     {
-#         'id_1': 7,
-#         'id_2': 8,
-#         'query_filename': 'queries_rnd_4_metamap_10_id.csv',
-#         'multi_match_fields': ['metamap_10_id_title_abstract'],
-#         'multi_match_type': 'cross_fields'
-#     },
-#     {
-#         'id_1': 9,
-#         'id_2': 10,
-#         'query_filename': 'queries_rnd_4_metamap_11_id.csv',
-#         'multi_match_fields': ['metamap_11_id_title_abstract'],
-#         'multi_match_type': 'cross_fields'
-#     }
 ]
 SETTINGS_LEVEL_2 = [
     {
@@ -81,44 +67,36 @@ SETTINGS_LEVEL_2 = [
 SETTINGS_LEVEL_3 = [
     {
         'id': 0,
-        'ltr_model': 'model_trec_covid_rnd_4_2_ranker_0'
-    },
-    {
-        'id': 1,
-        'ltr_model': 'model_trec_covid_rnd_4_2_ranker_1'
+        'ltr_model': 'model_trec_covid_test_1_rnd_4_ranker_0'
     },
     {
         'id': 2,
-        'ltr_model': 'model_trec_covid_rnd_4_2_ranker_2'
+        'ltr_model': 'model_trec_covid_test_1_rnd_4_ranker_2'
     },
     {
         'id': 3,
-        'ltr_model': 'model_trec_covid_rnd_4_2_ranker_3'
+        'ltr_model': 'model_trec_covid_test_1_rnd_4_ranker_3'
     },
     {
         'id': 4,
-        'ltr_model': 'model_trec_covid_rnd_4_2_ranker_4'
-    },
-    {
-        'id': 5,
-        'ltr_model': 'model_trec_covid_rnd_4_2_ranker_5'
+        'ltr_model': 'model_trec_covid_test_1_rnd_4_ranker_4'
     },
     {
         'id': 6,
-        'ltr_model': 'model_trec_covid_rnd_4_2_ranker_6'
+        'ltr_model': 'model_trec_covid_test_1_rnd_4_ranker_6'
     },
     {
         'id': 7,
-        'ltr_model': 'model_trec_covid_rnd_4_2_ranker_7'
+        'ltr_model': 'model_trec_covid_test_1_rnd_4_ranker_7'
     },
     {
         'id': 8,
-        'ltr_model': 'model_trec_covid_rnd_4_2_ranker_8'
+        'ltr_model': 'model_trec_covid_test_1_rnd_4_ranker_8'
     },
     {
         'id': 9,
-        'ltr_model': 'model_trec_covid_rnd_4_2_ranker_9'
-    },
+        'ltr_model': 'model_trec_covid_test_1_rnd_4_ranker_9'
+    }
 ]
 
 if __name__ == '__main__':
