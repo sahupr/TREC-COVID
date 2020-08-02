@@ -1,7 +1,7 @@
 from ltr_search import ltr_search
 import json
 
-SEARCH_SETTING_FILENAME = 'search_settings_rnd_4.json'
+SEARCH_SETTING_FILENAME = 'search_settings_rnd_4_v2.json'
 ES_INDEX = 'covid_19_0619_2'
 VALID_FILENAME = 'docids-rnd4.txt'
 PARAM_FILENAME = 'rnd4_params.csv'

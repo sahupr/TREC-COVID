@@ -1,0 +1,959 @@
+[
+    {
+        "output_filename": "run_files/run_2_19.txt",
+        "query_filename": "queries_rnd_4_text.csv",
+        "multi_match_fields": [
+            "title",
+            "abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 0,
+        "ltr_model": "model_trec_covid_rnd_4_2_ranker_0",
+        "score_mode": "total",
+        "query_weight": 1.0,
+        "rescore_query_weight": 1.0,
+        "run_tag": "CincyMedIR-2-19"
+    },
+    {
+        "output_filename": "run_files/run_2_20_1_3.txt",
+        "query_filename": "queries_rnd_4_text.csv",
+        "multi_match_fields": [
+            "title",
+            "abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_title_abstract_rnd_4_ranker_3",
+        "score_mode": "total",
+        "query_weight": 1.0,
+        "rescore_query_weight": 1.0,
+        "run_tag": "CincyMedIR-2-20-1-3"
+    },
+    {
+        "output_filename": "run_files/run_2_20_1_4.txt",
+        "query_filename": "queries_rnd_4_text.csv",
+        "multi_match_fields": [
+            "title",
+            "abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_title_abstract_rnd_4_ranker_4",
+        "score_mode": "total",
+        "query_weight": 1.0,
+        "rescore_query_weight": 1.0,
+        "run_tag": "CincyMedIR-2-20-1-4"
+    },
+    {
+        "output_filename": "run_files/run_2_20_2_3.txt",
+        "query_filename": "queries_rnd_4_text.csv",
+        "multi_match_fields": [
+            "title",
+            "abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_title_abstract_rnd_4_ranker_3",
+        "score_mode": "total",
+        "query_weight": 0.0,
+        "rescore_query_weight": 1.0,
+        "run_tag": "CincyMedIR-2-20-2-3"
+    },
+    {
+        "output_filename": "run_files/run_2_20_2_4.txt",
+        "query_filename": "queries_rnd_4_text.csv",
+        "multi_match_fields": [
+            "title",
+            "abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_title_abstract_rnd_4_ranker_4",
+        "score_mode": "total",
+        "query_weight": 0.0,
+        "rescore_query_weight": 1.0,
+        "run_tag": "CincyMedIR-2-20-2-4"
+    },
+    {
+        "output_filename": "run_files/run_2_20_3_3.txt",
+        "query_filename": "queries_rnd_4_text.csv",
+        "multi_match_fields": [
+            "title",
+            "abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_title_abstract_rnd_4_ranker_3",
+        "score_mode": "total",
+        "query_weight": 0.2,
+        "rescore_query_weight": 0.8,
+        "run_tag": "CincyMedIR-2-20-3-3"
+    },
+    {
+        "output_filename": "run_files/run_2_20_3_4.txt",
+        "query_filename": "queries_rnd_4_text.csv",
+        "multi_match_fields": [
+            "title",
+            "abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_title_abstract_rnd_4_ranker_4",
+        "score_mode": "total",
+        "query_weight": 0.2,
+        "rescore_query_weight": 0.8,
+        "run_tag": "CincyMedIR-2-20-3-4"
+    },
+    {
+        "output_filename": "run_files/run_2_20_4_3.txt",
+        "query_filename": "queries_rnd_4_text.csv",
+        "multi_match_fields": [
+            "title",
+            "abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_title_abstract_rnd_4_ranker_3",
+        "score_mode": "total",
+        "query_weight": 0.4,
+        "rescore_query_weight": 0.6,
+        "run_tag": "CincyMedIR-2-20-4-3"
+    },
+    {
+        "output_filename": "run_files/run_2_20_4_4.txt",
+        "query_filename": "queries_rnd_4_text.csv",
+        "multi_match_fields": [
+            "title",
+            "abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_title_abstract_rnd_4_ranker_4",
+        "score_mode": "total",
+        "query_weight": 0.4,
+        "rescore_query_weight": 0.6,
+        "run_tag": "CincyMedIR-2-20-4-4"
+    },
+    {
+        "output_filename": "run_files/run_2_20_5_3.txt",
+        "query_filename": "queries_rnd_4_text.csv",
+        "multi_match_fields": [
+            "title",
+            "abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_title_abstract_rnd_4_ranker_3",
+        "score_mode": "multiply",
+        "query_weight": 1.0,
+        "rescore_query_weight": 1.0,
+        "run_tag": "CincyMedIR-2-20-5-3"
+    },
+    {
+        "output_filename": "run_files/run_2_20_5_4.txt",
+        "query_filename": "queries_rnd_4_text.csv",
+        "multi_match_fields": [
+            "title",
+            "abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_title_abstract_rnd_4_ranker_4",
+        "score_mode": "multiply",
+        "query_weight": 1.0,
+        "rescore_query_weight": 1.0,
+        "run_tag": "CincyMedIR-2-20-5-4"
+    },
+    {
+        "output_filename": "run_files/run_2_1.txt",
+        "query_filename": "queries_rnd_4_text.csv",
+        "multi_match_fields": [
+            "title",
+            "abstract",
+            "metamap_00_term_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 0,
+        "ltr_model": "model_trec_covid_rnd_4_2_ranker_0",
+        "score_mode": "total",
+        "query_weight": 1.0,
+        "rescore_query_weight": 1.0,
+        "run_tag": "CincyMedIR-2-1"
+    },
+    {
+        "output_filename": "run_files/run_2_2_1_3.txt",
+        "query_filename": "queries_rnd_4_text.csv",
+        "multi_match_fields": [
+            "title",
+            "abstract",
+            "metamap_00_term_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_title_abstract_metamap_00_term_rnd_4_ranker_3",
+        "score_mode": "total",
+        "query_weight": 1.0,
+        "rescore_query_weight": 1.0,
+        "run_tag": "CincyMedIR-2-2-1-3"
+    },
+    {
+        "output_filename": "run_files/run_2_2_1_4.txt",
+        "query_filename": "queries_rnd_4_text.csv",
+        "multi_match_fields": [
+            "title",
+            "abstract",
+            "metamap_00_term_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_title_abstract_metamap_00_term_rnd_4_ranker_4",
+        "score_mode": "total",
+        "query_weight": 1.0,
+        "rescore_query_weight": 1.0,
+        "run_tag": "CincyMedIR-2-2-1-4"
+    },
+    {
+        "output_filename": "run_files/run_2_2_2_3.txt",
+        "query_filename": "queries_rnd_4_text.csv",
+        "multi_match_fields": [
+            "title",
+            "abstract",
+            "metamap_00_term_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_title_abstract_metamap_00_term_rnd_4_ranker_3",
+        "score_mode": "total",
+        "query_weight": 0.0,
+        "rescore_query_weight": 1.0,
+        "run_tag": "CincyMedIR-2-2-2-3"
+    },
+    {
+        "output_filename": "run_files/run_2_2_2_4.txt",
+        "query_filename": "queries_rnd_4_text.csv",
+        "multi_match_fields": [
+            "title",
+            "abstract",
+            "metamap_00_term_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_title_abstract_metamap_00_term_rnd_4_ranker_4",
+        "score_mode": "total",
+        "query_weight": 0.0,
+        "rescore_query_weight": 1.0,
+        "run_tag": "CincyMedIR-2-2-2-4"
+    },
+    {
+        "output_filename": "run_files/run_2_2_3_3.txt",
+        "query_filename": "queries_rnd_4_text.csv",
+        "multi_match_fields": [
+            "title",
+            "abstract",
+            "metamap_00_term_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_title_abstract_metamap_00_term_rnd_4_ranker_3",
+        "score_mode": "total",
+        "query_weight": 0.2,
+        "rescore_query_weight": 0.8,
+        "run_tag": "CincyMedIR-2-2-3-3"
+    },
+    {
+        "output_filename": "run_files/run_2_2_3_4.txt",
+        "query_filename": "queries_rnd_4_text.csv",
+        "multi_match_fields": [
+            "title",
+            "abstract",
+            "metamap_00_term_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_title_abstract_metamap_00_term_rnd_4_ranker_4",
+        "score_mode": "total",
+        "query_weight": 0.2,
+        "rescore_query_weight": 0.8,
+        "run_tag": "CincyMedIR-2-2-3-4"
+    },
+    {
+        "output_filename": "run_files/run_2_2_4_3.txt",
+        "query_filename": "queries_rnd_4_text.csv",
+        "multi_match_fields": [
+            "title",
+            "abstract",
+            "metamap_00_term_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_title_abstract_metamap_00_term_rnd_4_ranker_3",
+        "score_mode": "total",
+        "query_weight": 0.4,
+        "rescore_query_weight": 0.6,
+        "run_tag": "CincyMedIR-2-2-4-3"
+    },
+    {
+        "output_filename": "run_files/run_2_2_4_4.txt",
+        "query_filename": "queries_rnd_4_text.csv",
+        "multi_match_fields": [
+            "title",
+            "abstract",
+            "metamap_00_term_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_title_abstract_metamap_00_term_rnd_4_ranker_4",
+        "score_mode": "total",
+        "query_weight": 0.4,
+        "rescore_query_weight": 0.6,
+        "run_tag": "CincyMedIR-2-2-4-4"
+    },
+    {
+        "output_filename": "run_files/run_2_2_5_3.txt",
+        "query_filename": "queries_rnd_4_text.csv",
+        "multi_match_fields": [
+            "title",
+            "abstract",
+            "metamap_00_term_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_title_abstract_metamap_00_term_rnd_4_ranker_3",
+        "score_mode": "multiply",
+        "query_weight": 1.0,
+        "rescore_query_weight": 1.0,
+        "run_tag": "CincyMedIR-2-2-5-3"
+    },
+    {
+        "output_filename": "run_files/run_2_2_5_4.txt",
+        "query_filename": "queries_rnd_4_text.csv",
+        "multi_match_fields": [
+            "title",
+            "abstract",
+            "metamap_00_term_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_title_abstract_metamap_00_term_rnd_4_ranker_4",
+        "score_mode": "multiply",
+        "query_weight": 1.0,
+        "rescore_query_weight": 1.0,
+        "run_tag": "CincyMedIR-2-2-5-4"
+    },
+    {
+        "output_filename": "run_files/run_2_3.txt",
+        "query_filename": "queries_rnd_4_metamap_00_id.csv",
+        "multi_match_fields": [
+            "metamap_00_id_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 0,
+        "ltr_model": "model_trec_covid_rnd_4_2_ranker_0",
+        "score_mode": "total",
+        "query_weight": 1.0,
+        "rescore_query_weight": 1.0,
+        "run_tag": "CincyMedIR-2-3"
+    },
+    {
+        "output_filename": "run_files/run_2_4_1_3.txt",
+        "query_filename": "queries_rnd_4_metamap_00_id.csv",
+        "multi_match_fields": [
+            "metamap_00_id_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_metamap_00_id_rnd_4_ranker_3",
+        "score_mode": "total",
+        "query_weight": 1.0,
+        "rescore_query_weight": 1.0,
+        "run_tag": "CincyMedIR-2-4-1-3"
+    },
+    {
+        "output_filename": "run_files/run_2_4_1_4.txt",
+        "query_filename": "queries_rnd_4_metamap_00_id.csv",
+        "multi_match_fields": [
+            "metamap_00_id_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_metamap_00_id_rnd_4_ranker_4",
+        "score_mode": "total",
+        "query_weight": 1.0,
+        "rescore_query_weight": 1.0,
+        "run_tag": "CincyMedIR-2-4-1-4"
+    },
+    {
+        "output_filename": "run_files/run_2_4_2_3.txt",
+        "query_filename": "queries_rnd_4_metamap_00_id.csv",
+        "multi_match_fields": [
+            "metamap_00_id_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_metamap_00_id_rnd_4_ranker_3",
+        "score_mode": "total",
+        "query_weight": 0.0,
+        "rescore_query_weight": 1.0,
+        "run_tag": "CincyMedIR-2-4-2-3"
+    },
+    {
+        "output_filename": "run_files/run_2_4_2_4.txt",
+        "query_filename": "queries_rnd_4_metamap_00_id.csv",
+        "multi_match_fields": [
+            "metamap_00_id_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_metamap_00_id_rnd_4_ranker_4",
+        "score_mode": "total",
+        "query_weight": 0.0,
+        "rescore_query_weight": 1.0,
+        "run_tag": "CincyMedIR-2-4-2-4"
+    },
+    {
+        "output_filename": "run_files/run_2_4_3_3.txt",
+        "query_filename": "queries_rnd_4_metamap_00_id.csv",
+        "multi_match_fields": [
+            "metamap_00_id_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_metamap_00_id_rnd_4_ranker_3",
+        "score_mode": "total",
+        "query_weight": 0.2,
+        "rescore_query_weight": 0.8,
+        "run_tag": "CincyMedIR-2-4-3-3"
+    },
+    {
+        "output_filename": "run_files/run_2_4_3_4.txt",
+        "query_filename": "queries_rnd_4_metamap_00_id.csv",
+        "multi_match_fields": [
+            "metamap_00_id_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_metamap_00_id_rnd_4_ranker_4",
+        "score_mode": "total",
+        "query_weight": 0.2,
+        "rescore_query_weight": 0.8,
+        "run_tag": "CincyMedIR-2-4-3-4"
+    },
+    {
+        "output_filename": "run_files/run_2_4_4_3.txt",
+        "query_filename": "queries_rnd_4_metamap_00_id.csv",
+        "multi_match_fields": [
+            "metamap_00_id_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_metamap_00_id_rnd_4_ranker_3",
+        "score_mode": "total",
+        "query_weight": 0.4,
+        "rescore_query_weight": 0.6,
+        "run_tag": "CincyMedIR-2-4-4-3"
+    },
+    {
+        "output_filename": "run_files/run_2_4_4_4.txt",
+        "query_filename": "queries_rnd_4_metamap_00_id.csv",
+        "multi_match_fields": [
+            "metamap_00_id_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_metamap_00_id_rnd_4_ranker_4",
+        "score_mode": "total",
+        "query_weight": 0.4,
+        "rescore_query_weight": 0.6,
+        "run_tag": "CincyMedIR-2-4-4-4"
+    },
+    {
+        "output_filename": "run_files/run_2_4_5_3.txt",
+        "query_filename": "queries_rnd_4_metamap_00_id.csv",
+        "multi_match_fields": [
+            "metamap_00_id_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_metamap_00_id_rnd_4_ranker_3",
+        "score_mode": "multiply",
+        "query_weight": 1.0,
+        "rescore_query_weight": 1.0,
+        "run_tag": "CincyMedIR-2-4-5-3"
+    },
+    {
+        "output_filename": "run_files/run_2_4_5_4.txt",
+        "query_filename": "queries_rnd_4_metamap_00_id.csv",
+        "multi_match_fields": [
+            "metamap_00_id_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_metamap_00_id_rnd_4_ranker_4",
+        "score_mode": "multiply",
+        "query_weight": 1.0,
+        "rescore_query_weight": 1.0,
+        "run_tag": "CincyMedIR-2-4-5-4"
+    },
+    {
+        "output_filename": "run_files/run_2_5.txt",
+        "query_filename": "queries_rnd_4_metamap_01_id.csv",
+        "multi_match_fields": [
+            "metamap_01_id_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 0,
+        "ltr_model": "model_trec_covid_rnd_4_2_ranker_0",
+        "score_mode": "total",
+        "query_weight": 1.0,
+        "rescore_query_weight": 1.0,
+        "run_tag": "CincyMedIR-2-5"
+    },
+    {
+        "output_filename": "run_files/run_2_6_1_3.txt",
+        "query_filename": "queries_rnd_4_metamap_01_id.csv",
+        "multi_match_fields": [
+            "metamap_01_id_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_metamap_01_id_rnd_4_ranker_3",
+        "score_mode": "total",
+        "query_weight": 1.0,
+        "rescore_query_weight": 1.0,
+        "run_tag": "CincyMedIR-2-6-1-3"
+    },
+    {
+        "output_filename": "run_files/run_2_6_1_4.txt",
+        "query_filename": "queries_rnd_4_metamap_01_id.csv",
+        "multi_match_fields": [
+            "metamap_01_id_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_metamap_01_id_rnd_4_ranker_4",
+        "score_mode": "total",
+        "query_weight": 1.0,
+        "rescore_query_weight": 1.0,
+        "run_tag": "CincyMedIR-2-6-1-4"
+    },
+    {
+        "output_filename": "run_files/run_2_6_2_3.txt",
+        "query_filename": "queries_rnd_4_metamap_01_id.csv",
+        "multi_match_fields": [
+            "metamap_01_id_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_metamap_01_id_rnd_4_ranker_3",
+        "score_mode": "total",
+        "query_weight": 0.0,
+        "rescore_query_weight": 1.0,
+        "run_tag": "CincyMedIR-2-6-2-3"
+    },
+    {
+        "output_filename": "run_files/run_2_6_2_4.txt",
+        "query_filename": "queries_rnd_4_metamap_01_id.csv",
+        "multi_match_fields": [
+            "metamap_01_id_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_metamap_01_id_rnd_4_ranker_4",
+        "score_mode": "total",
+        "query_weight": 0.0,
+        "rescore_query_weight": 1.0,
+        "run_tag": "CincyMedIR-2-6-2-4"
+    },
+    {
+        "output_filename": "run_files/run_2_6_3_3.txt",
+        "query_filename": "queries_rnd_4_metamap_01_id.csv",
+        "multi_match_fields": [
+            "metamap_01_id_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_metamap_01_id_rnd_4_ranker_3",
+        "score_mode": "total",
+        "query_weight": 0.2,
+        "rescore_query_weight": 0.8,
+        "run_tag": "CincyMedIR-2-6-3-3"
+    },
+    {
+        "output_filename": "run_files/run_2_6_3_4.txt",
+        "query_filename": "queries_rnd_4_metamap_01_id.csv",
+        "multi_match_fields": [
+            "metamap_01_id_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_metamap_01_id_rnd_4_ranker_4",
+        "score_mode": "total",
+        "query_weight": 0.2,
+        "rescore_query_weight": 0.8,
+        "run_tag": "CincyMedIR-2-6-3-4"
+    },
+    {
+        "output_filename": "run_files/run_2_6_4_3.txt",
+        "query_filename": "queries_rnd_4_metamap_01_id.csv",
+        "multi_match_fields": [
+            "metamap_01_id_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_metamap_01_id_rnd_4_ranker_3",
+        "score_mode": "total",
+        "query_weight": 0.4,
+        "rescore_query_weight": 0.6,
+        "run_tag": "CincyMedIR-2-6-4-3"
+    },
+    {
+        "output_filename": "run_files/run_2_6_4_4.txt",
+        "query_filename": "queries_rnd_4_metamap_01_id.csv",
+        "multi_match_fields": [
+            "metamap_01_id_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_metamap_01_id_rnd_4_ranker_4",
+        "score_mode": "total",
+        "query_weight": 0.4,
+        "rescore_query_weight": 0.6,
+        "run_tag": "CincyMedIR-2-6-4-4"
+    },
+    {
+        "output_filename": "run_files/run_2_6_5_3.txt",
+        "query_filename": "queries_rnd_4_metamap_01_id.csv",
+        "multi_match_fields": [
+            "metamap_01_id_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_metamap_01_id_rnd_4_ranker_3",
+        "score_mode": "multiply",
+        "query_weight": 1.0,
+        "rescore_query_weight": 1.0,
+        "run_tag": "CincyMedIR-2-6-5-3"
+    },
+    {
+        "output_filename": "run_files/run_2_6_5_4.txt",
+        "query_filename": "queries_rnd_4_metamap_01_id.csv",
+        "multi_match_fields": [
+            "metamap_01_id_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_metamap_01_id_rnd_4_ranker_4",
+        "score_mode": "multiply",
+        "query_weight": 1.0,
+        "rescore_query_weight": 1.0,
+        "run_tag": "CincyMedIR-2-6-5-4"
+    },
+    {
+        "output_filename": "run_files/run_2_7.txt",
+        "query_filename": "queries_rnd_4_metamap_10_id.csv",
+        "multi_match_fields": [
+            "metamap_10_id_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 0,
+        "ltr_model": "model_trec_covid_rnd_4_2_ranker_0",
+        "score_mode": "total",
+        "query_weight": 1.0,
+        "rescore_query_weight": 1.0,
+        "run_tag": "CincyMedIR-2-7"
+    },
+    {
+        "output_filename": "run_files/run_2_8_1_3.txt",
+        "query_filename": "queries_rnd_4_metamap_10_id.csv",
+        "multi_match_fields": [
+            "metamap_10_id_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_metamap_10_id_rnd_4_ranker_3",
+        "score_mode": "total",
+        "query_weight": 1.0,
+        "rescore_query_weight": 1.0,
+        "run_tag": "CincyMedIR-2-8-1-3"
+    },
+    {
+        "output_filename": "run_files/run_2_8_1_4.txt",
+        "query_filename": "queries_rnd_4_metamap_10_id.csv",
+        "multi_match_fields": [
+            "metamap_10_id_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_metamap_10_id_rnd_4_ranker_4",
+        "score_mode": "total",
+        "query_weight": 1.0,
+        "rescore_query_weight": 1.0,
+        "run_tag": "CincyMedIR-2-8-1-4"
+    },
+    {
+        "output_filename": "run_files/run_2_8_2_3.txt",
+        "query_filename": "queries_rnd_4_metamap_10_id.csv",
+        "multi_match_fields": [
+            "metamap_10_id_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_metamap_10_id_rnd_4_ranker_3",
+        "score_mode": "total",
+        "query_weight": 0.0,
+        "rescore_query_weight": 1.0,
+        "run_tag": "CincyMedIR-2-8-2-3"
+    },
+    {
+        "output_filename": "run_files/run_2_8_2_4.txt",
+        "query_filename": "queries_rnd_4_metamap_10_id.csv",
+        "multi_match_fields": [
+            "metamap_10_id_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_metamap_10_id_rnd_4_ranker_4",
+        "score_mode": "total",
+        "query_weight": 0.0,
+        "rescore_query_weight": 1.0,
+        "run_tag": "CincyMedIR-2-8-2-4"
+    },
+    {
+        "output_filename": "run_files/run_2_8_3_3.txt",
+        "query_filename": "queries_rnd_4_metamap_10_id.csv",
+        "multi_match_fields": [
+            "metamap_10_id_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_metamap_10_id_rnd_4_ranker_3",
+        "score_mode": "total",
+        "query_weight": 0.2,
+        "rescore_query_weight": 0.8,
+        "run_tag": "CincyMedIR-2-8-3-3"
+    },
+    {
+        "output_filename": "run_files/run_2_8_3_4.txt",
+        "query_filename": "queries_rnd_4_metamap_10_id.csv",
+        "multi_match_fields": [
+            "metamap_10_id_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_metamap_10_id_rnd_4_ranker_4",
+        "score_mode": "total",
+        "query_weight": 0.2,
+        "rescore_query_weight": 0.8,
+        "run_tag": "CincyMedIR-2-8-3-4"
+    },
+    {
+        "output_filename": "run_files/run_2_8_4_3.txt",
+        "query_filename": "queries_rnd_4_metamap_10_id.csv",
+        "multi_match_fields": [
+            "metamap_10_id_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_metamap_10_id_rnd_4_ranker_3",
+        "score_mode": "total",
+        "query_weight": 0.4,
+        "rescore_query_weight": 0.6,
+        "run_tag": "CincyMedIR-2-8-4-3"
+    },
+    {
+        "output_filename": "run_files/run_2_8_4_4.txt",
+        "query_filename": "queries_rnd_4_metamap_10_id.csv",
+        "multi_match_fields": [
+            "metamap_10_id_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_metamap_10_id_rnd_4_ranker_4",
+        "score_mode": "total",
+        "query_weight": 0.4,
+        "rescore_query_weight": 0.6,
+        "run_tag": "CincyMedIR-2-8-4-4"
+    },
+    {
+        "output_filename": "run_files/run_2_8_5_3.txt",
+        "query_filename": "queries_rnd_4_metamap_10_id.csv",
+        "multi_match_fields": [
+            "metamap_10_id_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_metamap_10_id_rnd_4_ranker_3",
+        "score_mode": "multiply",
+        "query_weight": 1.0,
+        "rescore_query_weight": 1.0,
+        "run_tag": "CincyMedIR-2-8-5-3"
+    },
+    {
+        "output_filename": "run_files/run_2_8_5_4.txt",
+        "query_filename": "queries_rnd_4_metamap_10_id.csv",
+        "multi_match_fields": [
+            "metamap_10_id_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_metamap_10_id_rnd_4_ranker_4",
+        "score_mode": "multiply",
+        "query_weight": 1.0,
+        "rescore_query_weight": 1.0,
+        "run_tag": "CincyMedIR-2-8-5-4"
+    },
+    {
+        "output_filename": "run_files/run_2_9.txt",
+        "query_filename": "queries_rnd_4_metamap_11_id.csv",
+        "multi_match_fields": [
+            "metamap_11_id_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 0,
+        "ltr_model": "model_trec_covid_rnd_4_2_ranker_0",
+        "score_mode": "total",
+        "query_weight": 1.0,
+        "rescore_query_weight": 1.0,
+        "run_tag": "CincyMedIR-2-9"
+    },
+    {
+        "output_filename": "run_files/run_2_10_1_3.txt",
+        "query_filename": "queries_rnd_4_metamap_11_id.csv",
+        "multi_match_fields": [
+            "metamap_11_id_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_metamap_11_id_rnd_4_ranker_3",
+        "score_mode": "total",
+        "query_weight": 1.0,
+        "rescore_query_weight": 1.0,
+        "run_tag": "CincyMedIR-2-10-1-3"
+    },
+    {
+        "output_filename": "run_files/run_2_10_1_4.txt",
+        "query_filename": "queries_rnd_4_metamap_11_id.csv",
+        "multi_match_fields": [
+            "metamap_11_id_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_metamap_11_id_rnd_4_ranker_4",
+        "score_mode": "total",
+        "query_weight": 1.0,
+        "rescore_query_weight": 1.0,
+        "run_tag": "CincyMedIR-2-10-1-4"
+    },
+    {
+        "output_filename": "run_files/run_2_10_2_3.txt",
+        "query_filename": "queries_rnd_4_metamap_11_id.csv",
+        "multi_match_fields": [
+            "metamap_11_id_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_metamap_11_id_rnd_4_ranker_3",
+        "score_mode": "total",
+        "query_weight": 0.0,
+        "rescore_query_weight": 1.0,
+        "run_tag": "CincyMedIR-2-10-2-3"
+    },
+    {
+        "output_filename": "run_files/run_2_10_2_4.txt",
+        "query_filename": "queries_rnd_4_metamap_11_id.csv",
+        "multi_match_fields": [
+            "metamap_11_id_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_metamap_11_id_rnd_4_ranker_4",
+        "score_mode": "total",
+        "query_weight": 0.0,
+        "rescore_query_weight": 1.0,
+        "run_tag": "CincyMedIR-2-10-2-4"
+    },
+    {
+        "output_filename": "run_files/run_2_10_3_3.txt",
+        "query_filename": "queries_rnd_4_metamap_11_id.csv",
+        "multi_match_fields": [
+            "metamap_11_id_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_metamap_11_id_rnd_4_ranker_3",
+        "score_mode": "total",
+        "query_weight": 0.2,
+        "rescore_query_weight": 0.8,
+        "run_tag": "CincyMedIR-2-10-3-3"
+    },
+    {
+        "output_filename": "run_files/run_2_10_3_4.txt",
+        "query_filename": "queries_rnd_4_metamap_11_id.csv",
+        "multi_match_fields": [
+            "metamap_11_id_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_metamap_11_id_rnd_4_ranker_4",
+        "score_mode": "total",
+        "query_weight": 0.2,
+        "rescore_query_weight": 0.8,
+        "run_tag": "CincyMedIR-2-10-3-4"
+    },
+    {
+        "output_filename": "run_files/run_2_10_4_3.txt",
+        "query_filename": "queries_rnd_4_metamap_11_id.csv",
+        "multi_match_fields": [
+            "metamap_11_id_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_metamap_11_id_rnd_4_ranker_3",
+        "score_mode": "total",
+        "query_weight": 0.4,
+        "rescore_query_weight": 0.6,
+        "run_tag": "CincyMedIR-2-10-4-3"
+    },
+    {
+        "output_filename": "run_files/run_2_10_4_4.txt",
+        "query_filename": "queries_rnd_4_metamap_11_id.csv",
+        "multi_match_fields": [
+            "metamap_11_id_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_metamap_11_id_rnd_4_ranker_4",
+        "score_mode": "total",
+        "query_weight": 0.4,
+        "rescore_query_weight": 0.6,
+        "run_tag": "CincyMedIR-2-10-4-4"
+    },
+    {
+        "output_filename": "run_files/run_2_10_5_3.txt",
+        "query_filename": "queries_rnd_4_metamap_11_id.csv",
+        "multi_match_fields": [
+            "metamap_11_id_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_metamap_11_id_rnd_4_ranker_3",
+        "score_mode": "multiply",
+        "query_weight": 1.0,
+        "rescore_query_weight": 1.0,
+        "run_tag": "CincyMedIR-2-10-5-3"
+    },
+    {
+        "output_filename": "run_files/run_2_10_5_4.txt",
+        "query_filename": "queries_rnd_4_metamap_11_id.csv",
+        "multi_match_fields": [
+            "metamap_11_id_title_abstract"
+        ],
+        "multi_match_type": "cross_fields",
+        "use_ltr": 1,
+        "ltr_model": "model_trec_covid_metamap_11_id_rnd_4_ranker_4",
+        "score_mode": "multiply",
+        "query_weight": 1.0,
+        "rescore_query_weight": 1.0,
+        "run_tag": "CincyMedIR-2-10-5-4"
+    }
+]

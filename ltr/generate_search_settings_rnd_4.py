@@ -1,49 +1,62 @@
 import json
 
-SEARCH_SETTING_FILENAME = 'search_settings_rnd_4.json'
-OUTPUT_FILENAME_FORMAT_1 = 'run_files/run_{}.txt'
-OUTPUT_FILENAME_FORMAT_2 = 'run_files/run_{}_{}_{}.txt'
-RUN_TAG_FORMAT_1 = 'CincyMedIR-{}'
-RUN_TAG_FORMAT_2 = 'CincyMedIR-{}-{}-{}'
+SEARCH_SETTING_FILENAME = 'search_settings_rnd_4_v2.json'
+OUTPUT_FILENAME_FORMAT_1 = 'run_files/run_2_{}.txt'
+OUTPUT_FILENAME_FORMAT_2 = 'run_files/run_2_{}_{}_{}.txt'
+RUN_TAG_FORMAT_1 = 'CincyMedIR-2-{}'
+RUN_TAG_FORMAT_2 = 'CincyMedIR-2-{}-{}-{}'
 DEFAULT_LTR_MODEL = 'model_trec_covid_rnd_4_2_ranker_0'
 DEFAULT_SCORE_MODE = 'total'
 DEFAULT_QUERY_WEIGHT = 1.0
 DEFAULT_RESCORE_QUERY_WEIGHT = 1.0
 SETTINGS_LEVEL_1 = [
     {
+        'id_1': 19,
+        'id_2': 20,
+        'query_filename': 'queries_rnd_4_text.csv',
+        'multi_match_fields': ['title', 'abstract'],
+        'multi_match_type': 'cross_fields',
+        'ltr_model_format': 'model_trec_covid_title_abstract_rnd_4_ranker_{}'
+    },
+    {
         'id_1': 1,
         'id_2': 2,
         'query_filename': 'queries_rnd_4_text.csv',
-        'multi_match_fields': ['title', 'abstract', 'metamap_term_00_title_abstract'],
-        'multi_match_type': 'cross_fields'
+        'multi_match_fields': ['title', 'abstract', 'metamap_00_term_title_abstract'],
+        'multi_match_type': 'cross_fields',
+        'ltr_model_format': 'model_trec_covid_title_abstract_metamap_00_term_rnd_4_ranker_{}'
     },
     {
         'id_1': 3,
         'id_2': 4,
         'query_filename': 'queries_rnd_4_metamap_00_id.csv',
         'multi_match_fields': ['metamap_00_id_title_abstract'],
-        'multi_match_type': 'cross_fields'
+        'multi_match_type': 'cross_fields',
+        'ltr_model_format': 'model_trec_covid_metamap_00_id_rnd_4_ranker_{}'
     },
     {
         'id_1': 5,
         'id_2': 6,
         'query_filename': 'queries_rnd_4_metamap_01_id.csv',
         'multi_match_fields': ['metamap_01_id_title_abstract'],
-        'multi_match_type': 'cross_fields'
+        'multi_match_type': 'cross_fields',
+        'ltr_model_format': 'model_trec_covid_metamap_01_id_rnd_4_ranker_{}'
     },
     {
         'id_1': 7,
         'id_2': 8,
         'query_filename': 'queries_rnd_4_metamap_10_id.csv',
         'multi_match_fields': ['metamap_10_id_title_abstract'],
-        'multi_match_type': 'cross_fields'
+        'multi_match_type': 'cross_fields',
+        'ltr_model_format': 'model_trec_covid_metamap_10_id_rnd_4_ranker_{}'
     },
     {
         'id_1': 9,
         'id_2': 10,
         'query_filename': 'queries_rnd_4_metamap_11_id.csv',
         'multi_match_fields': ['metamap_11_id_title_abstract'],
-        'multi_match_type': 'cross_fields'
+        'multi_match_type': 'cross_fields',
+        'ltr_model_format': 'model_trec_covid_metamap_11_id_rnd_4_ranker_{}'
     }
 ]
 SETTINGS_LEVEL_2 = [
@@ -79,45 +92,53 @@ SETTINGS_LEVEL_2 = [
     }
 ]
 SETTINGS_LEVEL_3 = [
-    {
-        'id': 0,
-        'ltr_model': 'model_trec_covid_rnd_4_2_ranker_0'
-    },
-    {
-        'id': 1,
-        'ltr_model': 'model_trec_covid_rnd_4_2_ranker_1'
-    },
-    {
-        'id': 2,
-        'ltr_model': 'model_trec_covid_rnd_4_2_ranker_2'
-    },
+#     {
+#         'id': 0,
+#         'ltr_model': 'model_trec_covid_rnd_4_2_ranker_0'
+#     },
+#     {
+#         'id': 1,
+#         'ltr_model': 'model_trec_covid_rnd_4_2_ranker_1'
+#     },
+#     {
+#         'id': 2,
+#         'ltr_model': 'model_trec_covid_rnd_4_2_ranker_2'
+#     },
+#     {
+#         'id': 3,
+#         'ltr_model': 'model_trec_covid_rnd_4_2_ranker_3'
+#     },
+#     {
+#         'id': 4,
+#         'ltr_model': 'model_trec_covid_rnd_4_2_ranker_4'
+#     },
+#     {
+#         'id': 5,
+#         'ltr_model': 'model_trec_covid_rnd_4_2_ranker_5'
+#     },
+#     {
+#         'id': 6,
+#         'ltr_model': 'model_trec_covid_rnd_4_2_ranker_6'
+#     },
+#     {
+#         'id': 7,
+#         'ltr_model': 'model_trec_covid_rnd_4_2_ranker_7'
+#     },
+#     {
+#         'id': 8,
+#         'ltr_model': 'model_trec_covid_rnd_4_2_ranker_8'
+#     },
+#     {
+#         'id': 9,
+#         'ltr_model': 'model_trec_covid_rnd_4_2_ranker_9'
+#     },
+# ]
+
     {
         'id': 3,
-        'ltr_model': 'model_trec_covid_rnd_4_2_ranker_3'
     },
     {
         'id': 4,
-        'ltr_model': 'model_trec_covid_rnd_4_2_ranker_4'
-    },
-    {
-        'id': 5,
-        'ltr_model': 'model_trec_covid_rnd_4_2_ranker_5'
-    },
-    {
-        'id': 6,
-        'ltr_model': 'model_trec_covid_rnd_4_2_ranker_6'
-    },
-    {
-        'id': 7,
-        'ltr_model': 'model_trec_covid_rnd_4_2_ranker_7'
-    },
-    {
-        'id': 8,
-        'ltr_model': 'model_trec_covid_rnd_4_2_ranker_8'
-    },
-    {
-        'id': 9,
-        'ltr_model': 'model_trec_covid_rnd_4_2_ranker_9'
     },
 ]
 
@@ -145,7 +166,7 @@ if __name__ == '__main__':
                     'multi_match_fields': setting_level_1['multi_match_fields'],
                     'multi_match_type': setting_level_1['multi_match_type'],
                     'use_ltr': 1,
-                    'ltr_model': setting_level_3['ltr_model'],
+                    'ltr_model': setting_level_1['ltr_model_format'].format(setting_level_3['id']),
                     'score_mode': setting_level_2['score_mode'],
                     'query_weight': setting_level_2['query_weight'],
                     'rescore_query_weight': setting_level_2['rescore_query_weight'],
